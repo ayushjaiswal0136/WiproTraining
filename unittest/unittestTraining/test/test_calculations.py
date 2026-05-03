@@ -23,7 +23,7 @@ class TestCalculations(unittest.TestCase):
     @unittest.skipIf(sys.version_info<(3,13),reason='Not Implemented')
     def test_ne(self):
         res = ne(10,10)
-        self.assertTrue(res,msg='Not Equal')
+        self.assertTrue(res,msg='Equal')
 
     def test_diverr(self):
         with self.assertRaises(ZeroDivisionError, msg="NoException"):
