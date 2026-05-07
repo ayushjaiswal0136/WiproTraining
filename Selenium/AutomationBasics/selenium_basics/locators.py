@@ -58,7 +58,6 @@ driver = webdriver.Edge(service=Service('../resources/msedgedriver.exe'))
 # print(settings_text.text)
 # time.sleep(5)
 
-'''
 driver.get("https://the-internet.herokuapp.com/tables")
 
 time.sleep(5)
@@ -88,50 +87,49 @@ print(f"Ancestor Example -> Table ID: {ancestor_table.get_attribute('id')}")
 descendants = driver.find_elements(By.XPATH, "//table[@id='table1']/descendant::td")
 print(f"Descendant Example -> Found {len(descendants)} descendant cells.")
 
-'''
 
 # Relative Decorators
 
-driver.get("https://www.saucedemo.com/")
-time.sleep(2)
-
-#element used for reference
-username_field = driver.find_element(By.ID, "user-name")
-password_field = driver.find_element(By.ID, "password")
-login_button = driver.find_element(By.ID, "login-button")
-
-# above -> element located above another
-elmt_above_password = driver.find_element(
-    locate_with(By.TAG_NAME, "input").above(password_field)
-)
-print(f"Above Example -> Text above password: {elmt_above_password.get_attribute('placeholder')}")
-elmt_above_password.send_keys('standard_user')
-time.sleep(5)
-
-# below -> element located below another
-field_below_username = driver.find_element(
-    locate_with(By.TAG_NAME, "input").below(username_field)
-)
-print(f"Below Example -> Placeholder below username: {field_below_username.get_attribute('placeholder')}")
-field_below_username.send_keys('secret_sauce')
-time.sleep(2)
-
-login_button.click()
-time.sleep(2)
-
-# toRightof -> element to the left of another
-twitter_icon = driver.find_element(By.LINK_TEXT, "Twitter")
-facebook_icon = driver.find_element(locate_with(By.TAG_NAME, "a").to_left_of(twitter_icon))
-print(f"toRightOf Example -> Element to the right of Twitter icon has href: {facebook_icon.get_attribute('href')}")
-
-# toLeftof -> element to the right of another
-left_icon = driver.find_element(locate_with(By.TAG_NAME, "a").to_left_of(facebook_icon))
-print(f"toLeftOf Example -> Element to the left of Facebook icon has href: {left_icon.get_attribute('href')}")
-
-# near -> element close to another (within ~50px by default)
-near_twitter = driver.find_elements(locate_with(By.TAG_NAME, "a").near(facebook_icon))
-for element in near_twitter:
-    print(f"Near Example -> Element near Facebook icon has href: {element.get_attribute('href')}")
+# driver.get("https://www.saucedemo.com/")
+# time.sleep(2)
+#
+# #element used for reference
+# username_field = driver.find_element(By.ID, "user-name")
+# password_field = driver.find_element(By.ID, "password")
+# login_button = driver.find_element(By.ID, "login-button")
+#
+# # above -> element located above another
+# elmt_above_password = driver.find_element(
+#     locate_with(By.TAG_NAME, "input").above(password_field)
+# )
+# print(f"Above Example -> Text above password: {elmt_above_password.get_attribute('placeholder')}")
+# elmt_above_password.send_keys('standard_user')
+# time.sleep(5)
+#
+# # below -> element located below another
+# field_below_username = driver.find_element(
+#     locate_with(By.TAG_NAME, "input").below(username_field)
+# )
+# print(f"Below Example -> Placeholder below username: {field_below_username.get_attribute('placeholder')}")
+# field_below_username.send_keys('secret_sauce')
+# time.sleep(2)
+#
+# login_button.click()
+# time.sleep(2)
+#
+# # toRightof -> element to the left of another
+# twitter_icon = driver.find_element(By.LINK_TEXT, "Twitter")
+# facebook_icon = driver.find_element(locate_with(By.TAG_NAME, "a").to_left_of(twitter_icon))
+# print(f"toRightOf Example -> Element to the right of Twitter icon has href: {facebook_icon.get_attribute('href')}")
+#
+# # toLeftof -> element to the right of another
+# left_icon = driver.find_element(locate_with(By.TAG_NAME, "a").to_left_of(facebook_icon))
+# print(f"toLeftOf Example -> Element to the left of Facebook icon has href: {left_icon.get_attribute('href')}")
+#
+# # near -> element close to another (within ~50px by default)
+# near_twitter = driver.find_elements(locate_with(By.TAG_NAME, "a").near(facebook_icon))
+# for element in near_twitter:
+#     print(f"Near Example -> Element near Facebook icon has href: {element.get_attribute('href')}")
 
 time.sleep(3)
 
