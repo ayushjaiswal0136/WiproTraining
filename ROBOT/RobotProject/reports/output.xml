@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.4 on win32)" generated="2026-05-11T22:47:53.642271" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Wipro Training\ROBOT\RobotProject\tests">
+<suite id="s1-s1" name="Login" source="C:\Wipro Training\ROBOT\RobotProject\tests\login.robot">
+<test id="s1-s1-t1" name="Verify User Can Login Successfully" line="5">
+<kw name="Open Demoblaze Application" owner="signup_keywords">
+<kw name="Launch Demoblaze Application" owner="SignupPage">
+<msg time="2026-05-11T22:47:53.999539" level="INFO">Opening browser 'edge' to base url 'https://www.demoblaze.com'.</msg>
+<status status="PASS" start="2026-05-11T22:47:53.999311" elapsed="6.844653"/>
+</kw>
+<status status="PASS" start="2026-05-11T22:47:53.998205" elapsed="6.845964"/>
+</kw>
+<kw name="Click Login Menu">
+<msg time="2026-05-11T22:48:00.866973" level="FAIL">No keyword with name 'Click Login Menu' found.</msg>
+<status status="FAIL" start="2026-05-11T22:48:00.866842" elapsed="0.000250">No keyword with name 'Click Login Menu' found.</status>
+</kw>
+<kw name="Enter Login Username">
+<status status="NOT RUN" start="2026-05-11T22:48:00.869665" elapsed="0.000048"/>
+</kw>
+<kw name="Enter Login Password">
+<status status="NOT RUN" start="2026-05-11T22:48:00.871872" elapsed="0.000044"/>
+</kw>
+<kw name="Click Login Button">
+<status status="NOT RUN" start="2026-05-11T22:48:00.872252" elapsed="0.000037"/>
+</kw>
+<kw name="Validate Successful Login">
+<status status="NOT RUN" start="2026-05-11T22:48:00.872671" elapsed="0.000037"/>
+</kw>
+<kw name="Close Application" owner="signup_keywords">
+<status status="NOT RUN" start="2026-05-11T22:48:00.873072" elapsed="0.000050"/>
+</kw>
+<status status="FAIL" start="2026-05-11T22:47:53.996495" elapsed="6.877065">No keyword with name 'Click Login Menu' found.</status>
+</test>
+<test id="s1-s1-t2" name="Verify Invalid User Login" line="14">
+<kw name="Open Demoblaze Application" owner="signup_keywords">
+<kw name="Launch Demoblaze Application" owner="SignupPage">
+<msg time="2026-05-11T22:48:00.875848" level="INFO">Opening browser 'edge' to base url 'https://www.demoblaze.com'.</msg>
+<status status="PASS" start="2026-05-11T22:48:00.875648" elapsed="4.429601"/>
+</kw>
+<status status="PASS" start="2026-05-11T22:48:00.875276" elapsed="4.430184"/>
+</kw>
+<kw name="Click Login Menu">
+<msg time="2026-05-11T22:48:05.309042" level="FAIL">No keyword with name 'Click Login Menu' found.</msg>
+<status status="FAIL" start="2026-05-11T22:48:05.308960" elapsed="0.000169">No keyword with name 'Click Login Menu' found.</status>
+</kw>
+<kw name="Enter Invalid Login Username">
+<status status="NOT RUN" start="2026-05-11T22:48:05.334588" elapsed="0.000076"/>
+</kw>
+<kw name="Enter Invalid Login Password">
+<status status="NOT RUN" start="2026-05-11T22:48:05.340749" elapsed="0.000078"/>
+</kw>
+<kw name="Click Login Button">
+<status status="NOT RUN" start="2026-05-11T22:48:05.344975" elapsed="0.000060"/>
+</kw>
+<kw name="Validate Invalid Login Alert">
+<status status="NOT RUN" start="2026-05-11T22:48:05.355382" elapsed="0.000105"/>
+</kw>
+<kw name="Close Application" owner="signup_keywords">
+<status status="NOT RUN" start="2026-05-11T22:48:05.364515" elapsed="0.000109"/>
+</kw>
+<status status="FAIL" start="2026-05-11T22:48:00.874619" elapsed="4.498361">No keyword with name 'Click Login Menu' found.</status>
+</test>
+<status status="FAIL" start="2026-05-11T22:47:53.701609" elapsed="11.723063"/>
+</suite>
+<suite id="s1-s2" name="Signup" source="C:\Wipro Training\ROBOT\RobotProject\tests\signup.robot">
+<test id="s1-s2-t1" name="Verify User Can Signup Successfully" line="5">
+<kw name="Open Demoblaze Application" owner="signup_keywords">
+<kw name="Launch Demoblaze Application" owner="SignupPage">
+<msg time="2026-05-11T22:48:05.475531" level="INFO">Opening browser 'edge' to base url 'https://www.demoblaze.com'.</msg>
+<status status="PASS" start="2026-05-11T22:48:05.475323" elapsed="3.829579"/>
+</kw>
+<status status="PASS" start="2026-05-11T22:48:05.474857" elapsed="3.830216"/>
+</kw>
+<kw name="Click Signup Menu" owner="signup_keywords">
+<kw name="Click Signup Link" owner="SignupPage">
+<msg time="2026-05-11T22:48:09.306559" level="INFO">Clicking element 'id=signin2'.</msg>
+<status status="PASS" start="2026-05-11T22:48:09.306383" elapsed="0.306806"/>
+</kw>
+<status status="PASS" start="2026-05-11T22:48:09.305687" elapsed="0.307679"/>
+</kw>
+<kw name="Enter Signup Username" owner="signup_keywords">
+<kw name="Enter Username" owner="SignupPage">
+<msg time="2026-05-11T22:48:09.614382" level="INFO">Typing text 'user45811' into text field 'id=sign-username'.</msg>
+<status status="PASS" start="2026-05-11T22:48:09.614233" elapsed="0.468120"/>
+</kw>
+<status status="PASS" start="2026-05-11T22:48:09.613827" elapsed="0.468797"/>
+</kw>
+<kw name="Enter Signup Password" owner="signup_keywords">
+<kw name="Enter Password" owner="SignupPage">
+<msg time="2026-05-11T22:48:10.085917" level="INFO">Typing text 'pwdpwdpwd' into text field 'id=sign-password'.</msg>
+<status status="PASS" start="2026-05-11T22:48:10.085371" elapsed="0.182160"/>
+</kw>
+<status status="PASS" start="2026-05-11T22:48:10.083449" elapsed="0.184250"/>
+</kw>
+<kw name="Click Signup Button" owner="signup_keywords">
+<kw name="Click Register Button" owner="SignupPage">
+<msg time="2026-05-11T22:48:10.268627" level="INFO">Clicking button '//button[text()='Sign up']'.</msg>
+<status status="PASS" start="2026-05-11T22:48:10.268492" elapsed="0.231949"/>
+</kw>
+<status status="PASS" start="2026-05-11T22:48:10.268113" elapsed="0.232495"/>
+</kw>
+<kw name="Validate Signup Success Message" owner="signup_keywords">
+<kw name="Verify Signup Success Alert" owner="SignupPage">
+<msg time="2026-05-11T22:48:11.540982" level="INFO">Sign up successful.</msg>
+<status status="PASS" start="2026-05-11T22:48:10.501433" elapsed="1.039692"/>
+</kw>
+<status status="PASS" start="2026-05-11T22:48:10.501012" elapsed="1.040251"/>
+</kw>
+<kw name="Close Application" owner="signup_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-11T22:48:11.545361" elapsed="3.604139"/>
+</kw>
+<status status="PASS" start="2026-05-11T22:48:11.543097" elapsed="3.606595"/>
+</kw>
+<status status="PASS" start="2026-05-11T22:48:05.468165" elapsed="9.681879"/>
+</test>
+<status status="PASS" start="2026-05-11T22:48:05.448246" elapsed="9.702477"/>
+</suite>
+<status status="FAIL" start="2026-05-11T22:47:53.644790" elapsed="21.508373"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="2" skip="0">Tests</stat>
+<stat name="Login" id="s1-s1" pass="0" fail="2" skip="0">Tests.Login</stat>
+<stat name="Signup" id="s1-s2" pass="1" fail="0" skip="0">Tests.Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
